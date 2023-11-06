@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { useState, useTransition } from 'react';
 import TabButton from '@/app/components/TabButton';
 
+const aboutImage = '/images/about-im.jpg';
+
 const TAB_DATA = [
 	{
 		title: "Навыки",
@@ -62,7 +64,7 @@ const AboutSection = () => {
 				<div className="h-full">
 					<Image
 						className="rounded-xl"
-						src="/images/about-im.jpg"
+						src={aboutImage}
 						width={500}
 						height={500}
 						alt="about image"
