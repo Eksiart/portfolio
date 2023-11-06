@@ -1,3 +1,6 @@
+"use client";
+import { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import ProjectCard from '@/app/components/ProjectCard';
 
 const projectsData = [
@@ -43,25 +46,41 @@ const projectsData = [
 	},
 ]
 
+const cardVariants = {
+	initial: { y: 50, opacity: 0, scale: 0.5 },
+	animate: { y: 0, opacity: 1, scale: 1 }
+};
+
 const ProjectsSection = () => {
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: true });
+
 	return (
-		<>
+		<section className="scroll-mt-48 md:scroll-mt-48" id="projects">
 			<h2 className="text-center text-4xl font-bold text-white mt-8 mb-8 md:mb-12">
 				Мои проекты
 			</h2>
-			<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-				{projectsData.map(p => (
-					<ProjectCard
+			<ul ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+				{projectsData.map((p, index) => (
+					<motion.li
 						key={p.id}
-						title={p.title}
-						description={p.description}
-						imgUrl={p.image}
-						codeUrl={p.codeUrl}
-						previewUrl={p.previewUrl}
-					/>
+						variants={cardVariants}
+						initial="initial"
+						animate={isInView ? "animate" : "initial"}
+						transition={{ duration: 0.3, delay: index * 0.4 }}
+					>
+						<ProjectCard
+							key={p.id}
+							title={p.title}
+							description={p.description}
+							imgUrl={p.image}
+							codeUrl={p.codeUrl}
+							previewUrl={p.previewUrl}
+						/>
+					</motion.li>
 				))}
-			</div>
-		</>
+			</ul>
+		</section>
 	);
 };
 

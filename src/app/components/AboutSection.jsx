@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { useState, useTransition } from 'react';
 import TabButton from '@/app/components/TabButton';
 import aboutImage from '../../../public/images/about-im.jpg'
-// const aboutImage = '/images/about-im.jpg';
 
 const TAB_DATA = [
 	{
@@ -59,7 +58,7 @@ const AboutSection = () => {
 	};
 
 	return (
-		<section className="text-white">
+		<section className="text-white -scroll-mt-28 md:scroll-mt-32" id="about">
 			<div className="md:grid md:grid-cols-2 gap-16 items-center py-8 px-4 xl:gap-16 sm:pt-16 xl:px-16">
 				<div className="h-full">
 					<Image
