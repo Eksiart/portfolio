@@ -1,8 +1,8 @@
 "use client";
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
-
-const heroImage = '/images/hr.png';
+import heroImage from '../../../public/images/hr.png'
+// const heroImage = '/images/hr.png';
 
 const HeroSection = () => {
 	return (

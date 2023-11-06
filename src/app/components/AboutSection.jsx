@@ -2,8 +2,8 @@
 import Image from 'next/image';
 import { useState, useTransition } from 'react';
 import TabButton from '@/app/components/TabButton';
-
-const aboutImage = '/images/about-im.jpg';
+import aboutImage from '../../../public/images/about-im.jpg'
+// const aboutImage = '/images/about-im.jpg';
 
 const TAB_DATA = [
 	{
