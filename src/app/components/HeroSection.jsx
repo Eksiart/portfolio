@@ -17,7 +17,7 @@ const HeroSection = () => {
 					<h1 className="text-white mb-4 text-5xl sm:text-4xl lg:text-6xl font-extrabold">
 						<span>Привет, я </span>
 						<br/>
-						<div className="w-80 md:w-96 h-24 lg:h-32 max-sm:mx-auto 2xl:h-16">
+						<div className="w-80 xl:w-auto md:w-96 h-24 lg:h-32 max-sm:mx-auto 2xl:h-16">
 							<TypeAnimation
 								sequence={[
 									'Дашинимаев Ардан',

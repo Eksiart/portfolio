@@ -25,15 +25,15 @@ const Navbar = () => {
 
 	return (
 		<nav className="fixed top-0 left-0 right-0 z-10 bg-[#2b2b2b] bg-opacity-90">
-			<div className="flex flex-wrap items-center justify-between mx-auto p-8">
-				<Link href={'/'} className="text-2xl md:text-5xl text-white font-semibold">
+			<div className="flex flex-wrap items-center justify-between mx-auto p-4 xl:p-8">
+				<Link href={'/'} className="text-2xl md:text-4xl text-white font-semibold">
 					EKSIART
 				</Link>
 				<div className="mobile-menu block md:hidden">
 					{
 						isNavbarOpen ? (
 							<button
-								aria-label="navgation menu"
+								aria-label="navgation menu close"
 								className="flex items-center px-3 py-2 text-slate-200 hover:text-white"
 								onClick={() => setIsNavbarOpen(false)}
 							>
@@ -41,6 +41,7 @@ const Navbar = () => {
 							</button>
 						) : (
 							<button
+								aria-label="navgation menu open"
 								className="flex items-center px-3 py-2 text-slate-200 hover:text-white"
 								onClick={() => setIsNavbarOpen(true)}
 							>
