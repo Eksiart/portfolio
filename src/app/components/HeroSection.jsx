@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
-import heroImage from '../../../public/images/hr.png'
+import heroImage from '../../../public/images/hr.webp'
 
 const HeroSection = () => {
 	return (
@@ -17,7 +17,7 @@ const HeroSection = () => {
 					<h1 className="text-white mb-4 text-5xl sm:text-4xl lg:text-6xl font-extrabold">
 						<span>Привет, я </span>
 						<br/>
-						<div className="h-24 lg:h-32 max-sm:mx-auto 2xl:h-16">
+						<div className="w-80 md:w-96 h-24 lg:h-32 max-sm:mx-auto 2xl:h-16">
 							<TypeAnimation
 								sequence={[
 									'Дашинимаев Ардан',
@@ -32,7 +32,7 @@ const HeroSection = () => {
 						</div>
 					</h1>
 					<p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci animi eius eligendi eveniet
+						На этой странице вы можете рассмотреть мое портфолио/резюме. Данный веб-сайт разработан с использованием таких технологий, как Next.js, React, Tailwind
 					</p>
 					<div>
 						<button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black">
