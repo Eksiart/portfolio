@@ -29,7 +29,7 @@ const projectsData = [
 		previewUrl: 'https://eksiart.github.io/picasso-test/posts',
 	},
 	{
-		id: 3,
+		id: 4,
 		title: 'Find user, abort second request',
 		description: 'React, Vite, Node.js, Express. Test task for 3205 company',
 		image: '/images/projects/3205.jpg',
@@ -37,7 +37,7 @@ const projectsData = [
 		previewUrl: 'https://3205.eksiart.ru/',
 	},
 	{
-		id: 4,
+		id: 5,
 		title: 'Find user',
 		description: 'React, Vite, CSS\n Test task for globexit company',
 		image: '/images/projects/globexit.jpg',
