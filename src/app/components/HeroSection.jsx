@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import heroImage from '../../../public/images/hr.webp'
+import Link from 'next/link';
 
 const HeroSection = () => {
 	return (
@@ -35,12 +36,16 @@ const HeroSection = () => {
 						На этой странице вы можете рассмотреть мое портфолио/резюме. Данный веб-сайт разработан с использованием таких технологий, как Next.js, React, Tailwind
 					</p>
 					<div>
-						<button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black">
-							Связаться
-						</button>
-						<button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 text-white border border-white mt-3">
-							Скачать резюме
-						</button>
+						<Link href="#contact">
+							<button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black">
+								Связаться
+							</button>
+						</Link>
+						<a download="csv" href="/CSV Ardan Dashinimaev.pdf">
+							<button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 text-white border border-white mt-3">
+								Скачать резюме
+							</button>
+						</a>
 					</div>
 				</motion.div>
 				<motion.div

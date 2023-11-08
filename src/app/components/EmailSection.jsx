@@ -94,7 +94,7 @@ const EmailSection = () => {
 						<textarea
 							id="message"
 							name="message"
-							className="bg-[#18191E] border border-[#33353F] place-[#9CA2A9] ext-gray-100 text-sm rounded-lg block w-full p-2.5"
+							className="bg-[#18191E] border border-[#33353F] place-[#9CA2A9] ext-gray-100 text-sm rounded-lg block w-full p-2.5 text-white"
 							placeholder="Введите ваше сообщение"
 						/>
 					</div>
