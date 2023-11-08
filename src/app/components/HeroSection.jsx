@@ -41,7 +41,7 @@ const HeroSection = () => {
 								Связаться
 							</button>
 						</Link>
-						<a download="csv" href="/CSV Ardan Dashinimaev.pdf">
+						<a download="CSV Ardan Dashinimaev" href="/CSV Ardan Dashinimaev.pdf">
 							<button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 text-white border border-white mt-3">
 								Скачать резюме
 							</button>
