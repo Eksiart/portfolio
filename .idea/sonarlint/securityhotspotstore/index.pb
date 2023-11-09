@@ -30,3 +30,6 @@ A
 src/app/layout.js,b\7\b7c052a7d21b1daeb1c65f186a3f5898d9c80896
 V
 &src/app/components/ProjectsSection.jsx,2\4\24e42bfc742adbd6348aac16594a7e53fd3f2b33
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
