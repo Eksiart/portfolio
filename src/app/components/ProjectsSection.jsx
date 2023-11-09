@@ -39,10 +39,18 @@ const projectsData = [
 	{
 		id: 5,
 		title: 'Find user',
-		description: 'React, Vite, CSS\n Test task for globexit company',
+		description: 'React, Vite, CSS. Test task for globexit company',
 		image: '/images/projects/globexit.webp',
 		codeUrl: 'https://github.com/Eksiart/globexit-test',
 		previewUrl: 'https://globexit.eksiart.ru/',
+	},
+	{
+		id: 5,
+		title: 'Product list',
+		description: 'React, Vite, Tailwind, RTK, RTK Query. Filters, debounce, pagination',
+		image: '/images/projects/products.webp',
+		codeUrl: 'https://github.com/Eksiart/react-redux-ts-vite-test',
+		previewUrl: 'https://products.eksiart.ru/',
 	},
 ]
 
