@@ -52,6 +52,14 @@ const projectsData = [
 		codeUrl: 'https://github.com/Eksiart/react-redux-ts-vite-test',
 		previewUrl: 'https://products.eksiart.ru/',
 	},
+	{
+		id: 6,
+		title: 'Posts list',
+		description: 'TypeScript, React, Vite, RTK. Filters, debounce, pagination, jsonplaceholder',
+		image: '/images/projects/posts.webp',
+		codeUrl: 'https://github.com/Eksiart/posts-test-react-redux-ts-antd-vite',
+		previewUrl: 'https://posts.eksiart.ru/',
+	},
 ]
 
 const cardVariants = {
